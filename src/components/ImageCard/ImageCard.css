@@ -1,0 +1,6 @@
+img {
+    max-width: 25vw;
+    max-height: 50vh;
+    object-fit: cover;
+    position: absolute;
+  }
