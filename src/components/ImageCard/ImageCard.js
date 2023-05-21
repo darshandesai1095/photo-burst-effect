@@ -12,9 +12,10 @@ const ImageCard = ({ src, i, l }) => {
     const scale   = useTransform(scrollYProgress, [0.99*((i-1)/l), i/l, (i+1)/l], [1-(i*1/l), 1, 4])
     const opacity = useTransform(scrollYProgress, [0.99*((i-1)/l), i/l, (i+1)/l], [0.1, 1.1, -0.4]) // 0.1 should scale with l
     const yOffset = useTransform(scrollYProgress, [0.99*((i-1)/l), i/l, (i+1)/l], [-i*l/4, 0, 0]) // -i*10 should scale with l
+    const blur    = useTransform(scrollYProgress, [0.99*((i-1)/l), i/l, (i+1)/l], [0, 0, 0])
 
     const rotation = useMemo(() => {
-       return (Math.floor(Math.random()*41) - 10)
+       return (Math.floor(Math.random()*41) - 20)
     }, [])
 
 
@@ -28,7 +29,8 @@ const ImageCard = ({ src, i, l }) => {
                     opacity: opacity,
                     y: yOffset,
                     zIndex: -i,
-                    rotateZ: rotation
+                    rotateZ: rotation,
+                    filter: `blur(${blur}px)`
                 }}
             />
         </>

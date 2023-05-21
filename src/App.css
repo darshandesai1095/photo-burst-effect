@@ -6,6 +6,7 @@
   height: 500vh;
   width: 100vw;
   overflow-x: hidden;
+  color: var(--primary-color)
 }
 
 .main-content {
@@ -21,8 +22,9 @@
 .main-content > * {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
+  flex: 1;
   height: 100vh;
+
 }
 
 .flex-left {
@@ -36,6 +38,5 @@
 }
 
 .flex-right {
-  justify-content: flex-end;
-  align-items: flex-end;
+  position: relative;
 }

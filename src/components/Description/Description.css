@@ -1,4 +1,29 @@
 .description {
-    border: 1px solid red;
-    margin: 20px;
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    overflow-wrap: break-word;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    margin: 40px;
+    width: 50%;
+}
+
+.description__heading {
+    margin-bottom: 10px;
+    color: #adb5bd;
+}
+
+.description__main {
+    font-weight: 400;
+}
+
+.description--visible {
+    display: block;
+}
+
+.description--hidden {
+    display: none;
 }
