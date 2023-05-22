@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import images from '../../images';
 import Typewriter from '../../Effects/Typewriter/Typewriter';
 
-const DescriptionStack = ({}) => {
+const DescriptionStack = () => {
 
     const l = images.length
     const { scrollYProgress } = useScroll()
@@ -25,11 +25,14 @@ const DescriptionStack = ({}) => {
 
     
     return (
-        <>
-            <Typewriter
-                index={currentIndex}
-            />
-        </>
+        <div className="description">
+            <h4 className='description__heading'>Description</h4>
+            <p className='description__main'>
+                <Typewriter
+                    index={currentIndex}
+                />
+            </p>
+        </div>
     )
 }
 
