@@ -21,15 +21,14 @@
 
 .main-content > * {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
   height: 100vh;
-
+  padding: 40px
 }
 
 .flex-left {
-  justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .flex-center {
@@ -38,5 +37,6 @@
 }
 
 .flex-right {
-  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
 }

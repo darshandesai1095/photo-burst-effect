@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import './Description.css';
 import { motion, useScroll, useTransform } from 'framer-motion'
 import images from '../../images';
+import Typewriter from '../../Effects/Typewriter/Typewriter';
 
 const Description = ({description, i, l}) => {
 
@@ -31,7 +32,10 @@ const Description = ({description, i, l}) => {
         >
             <h4 className='description__heading'>Description</h4>
             <p className='description__main'>
-                {images[i].description}
+              <Typewriter
+                index={i}
+              />
+                {/* {images[i].description} */}
             </p>
         </motion.div>
     );

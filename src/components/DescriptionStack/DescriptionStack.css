@@ -1,0 +1,16 @@
+.description {
+    text-align: right;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    width: 18vw;
+    bottom: 0px
+}
+
+.description__heading {
+    margin-bottom: 10px;
+    color: #adb5bd;
+}
+
+.description__main {
+    font-weight: 400;
+}

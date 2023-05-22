@@ -30,22 +30,12 @@ const App = () => {
     )
   })
 
-  const descriptionStack = images.map ( (img, i) => {
-    return (
-      <Description
-        key={i}
-        description={img.description}
-        i={i}
-        l={l}
-      />
-    )
-  })
-
   return (
     <div className="App">
       <div className="main-content">
 
-        <div className='flex-left'> 
+        <div className='flex-left'>
+          
         </div>
 
         <div className='flex-center'>
@@ -53,10 +43,10 @@ const App = () => {
         </div>
 
         <div className='flex-right'>
-          <div className='description-stack'>
-            {descriptionStack}
-            <DescriptionStack/>
-          </div>
+          <div></div>
+          <div></div>
+          <div className='flex-right__description'><DescriptionStack/></div>
+          {/* <DescriptionStack/> */}
         </div>
 
       </div>
