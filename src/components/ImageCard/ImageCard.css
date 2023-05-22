@@ -3,4 +3,5 @@ img {
     max-height: 50vh;
     object-fit: cover;
     position: absolute;
+    transition: 0.3s;
   }

@@ -4,6 +4,8 @@ import images from './images.js'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import ImageCard from './components/ImageCard/ImageCard';
 import Description from './components/Description/Description';
+import DescriptionStack from './components/DescriptionStack/DescriptionStack';
+
 
 const App = () => {
 
@@ -44,7 +46,6 @@ const App = () => {
       <div className="main-content">
 
         <div className='flex-left'> 
-        {scrollY}
         </div>
 
         <div className='flex-center'>
@@ -54,6 +55,7 @@ const App = () => {
         <div className='flex-right'>
           <div className='description-stack'>
             {descriptionStack}
+            <DescriptionStack/>
           </div>
         </div>
 

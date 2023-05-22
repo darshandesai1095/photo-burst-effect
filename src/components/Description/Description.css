@@ -1,7 +1,7 @@
 .description {
     text-align: right;
     font-size: 0.8rem;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     overflow-wrap: break-word;
     position: absolute;
     bottom: 0px;
@@ -22,8 +22,33 @@
 
 .description--visible {
     display: block;
+    animation: animateIn 0.5s forwards;
 }
 
 .description--hidden {
     display: none;
+    animation: animateOut 0.5s forwards;
 }
+
+
+/* @keyframes animateIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0px) scale(1)
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1)
+    }
+}
+  
+@keyframes animateOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) scale(1)
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-0px) scale(1)
+    }
+} */
