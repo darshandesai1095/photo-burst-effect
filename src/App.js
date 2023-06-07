@@ -21,17 +21,9 @@ const App = () => {
   return (
     <div className="App">
       <div className="main-content">
-
-        <div className='flex-left'>
-        </div>
-
         <div className='flex-center'>
           {imageStack}
         </div>
-
-        <div className='flex-right'>
-        </div>
-
       </div>
     </div>
   );
