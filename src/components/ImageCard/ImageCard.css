@@ -1,7 +1,7 @@
 img {
-    max-width: 25vw;
-    max-height: 50vh;
-    object-fit: cover;
-    position: absolute;
-    transition: 0.3s;
-  }
+  box-sizing: border-box;
+  max-width: 35vw;
+  max-height: 60vh;
+  object-fit: cover;
+  position: absolute;
+}

@@ -11,9 +11,3 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-:root {
-  --primary-color: #212529;
-  --secondary-color: #495057;
-  --tertiary-color: #adb5bd;
-}
